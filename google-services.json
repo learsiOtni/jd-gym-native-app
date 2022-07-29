@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "658388047441",
+    "firebase_url": "https://jd-gym-app.firebaseio.com",
+    "project_id": "jd-gym-app",
+    "storage_bucket": "jd-gym-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658388047441:android:93688accb23cb3c02b4a70",
+        "android_client_info": {
+          "package_name": "com.trinto.jdgym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658388047441-1eeam77n3m312vaelvuostpuj1v7486t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF7Nyjw_PjvEtPe5o4-ZCYY8y1zytGO_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658388047441-1eeam77n3m312vaelvuostpuj1v7486t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "658388047441-4i2ij336g7tefhm7g81met3vpgs3q6jr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.portfolio.jd-gym-native-app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

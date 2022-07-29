@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>658388047441-4i2ij336g7tefhm7g81met3vpgs3q6jr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.658388047441-4i2ij336g7tefhm7g81met3vpgs3q6jr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCZ4882XqtvdWuEFDucHWukzW_fG7yOKfI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>658388047441</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.portfolio.jd-gym-native-app</string>
+	<key>PROJECT_ID</key>
+	<string>jd-gym-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>jd-gym-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:658388047441:ios:54d2485405ba8a662b4a70</string>
+	<key>DATABASE_URL</key>
+	<string>https://jd-gym-app.firebaseio.com</string>
+</dict>
+</plist>

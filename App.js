@@ -1,20 +1,59 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useState, useEffect, useCallback } from 'react';
+import { View, Text } from 'react-native';
+import * as SplashScreen from 'expo-splash-screen';
+import * as Font from 'expo-font';
+
+import Navigator from './navigation';
+
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  const [isFontsLoaded, setIsFontsLoaded] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  useEffect(() => {
+    async function prepare() {
+      try {
+        await Font.loadAsync({
+          'montserrat': require('./assets/fonts/Montserrat-Regular.ttf'),
+          'montserrat-bold': require('./assets/fonts/Montserrat-Bold.ttf'),
+          'montserrat-semibold': require('./assets/fonts/Montserrat-SemiBold.ttf'),
+          'montserrat-italic': require('./assets/fonts/Montserrat-Italic.ttf')
+        });
+
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+      } catch (e) {
+        console.warn(e);
+      } finally {
+        // Tell the application to render
+        setIsFontsLoaded(true);
+      }
+    }
+
+    prepare();
+  }, []);
+
+  const onLayoutRootView = useCallback(async () => {
+    if (isFontsLoaded) {
+      await SplashScreen.hideAsync();
+      setIsLoading(false);
+    }
+  }, [isFontsLoaded]);
+
+  if(!isLoading) {
+    return <Navigator />
+  }
+
+  if (!isFontsLoaded) {
+    return null;
+  }
+
+  return (
+    <View
+      style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
+      onLayout={onLayoutRootView}>
+        <Text>Put Splash Here</Text>
+    </View>
+  )
+}
