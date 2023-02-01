@@ -23,7 +23,8 @@ The app's functionality is currently limited.
 * Firebase
 
 </br>
-<img src="./assets/gif/account.gif" height="720" width="200">
+<img src="./assets/gif/account.gif" height="720" width="350">
+<img src="./assets/gif/login.gif" height="720" width="350">
 
 
 <!-- GETTING STARTED -->
