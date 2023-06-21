@@ -15,7 +15,7 @@ const AccountScreen = ({navigation}) => {
     return(
         <View flex style={styles.screen}>
             <View style={styles.headerContainer}>
-                <Text title white style={styles.title}>ISRAEL LABARINTO</Text>
+                <Text title white style={styles.title}>Portgas D. Ace</Text>
                 
                 <TouchableWithoutFeedback onPress={ () => navigation.navigate("Details")}>
                     <View style={styles.underline}>
